@@ -17,10 +17,24 @@ import { NavbarComponent } from './Component/navbar/navbar.component';
 import{Ng2CarouselamosModule} from 'ng2-carouselamos';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
+import{AngularFireModule} from 'angularfire2';
+import{AngularFireDatabaseModule} from 'angularfire2/database';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { EventsComponent } from './component/events/events.component';
+import { ContactComponent } from './component/contact/contact.component';
+
+
+const config = {
+  apiKey: "AIzaSyBT2Mi8CZ_6KOmIROdg2A2d_pknbI6ukEs",
+  authDomain: "eventorganizer-6df12.firebaseapp.com",
+  databaseURL: "https://eventorganizer-6df12.firebaseio.com",
+  projectId: "eventorganizer-6df12",
+  storageBucket: "eventorganizer-6df12.appspot.com",
+  messagingSenderId: "944241107231"
+};
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +46,8 @@ import { EventsComponent } from './component/events/events.component';
     NavbarComponent,
     HomepageComponent,
     FooterComponent,
-    EventsComponent
+    EventsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +68,9 @@ import { EventsComponent } from './component/events/events.component';
     MatOptionModule,
     MatSelectModule,
     Ng2CarouselamosModule,
-    NgbModule
+    NgbModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireDatabaseModule
   ],
   providers: [{provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},SignUpService,ProfileService],
   bootstrap: [AppComponent]
