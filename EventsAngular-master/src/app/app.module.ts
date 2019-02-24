@@ -22,6 +22,7 @@ import{AngularFireDatabaseModule} from 'angularfire2/database';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { EventsComponent } from './component/events/events.component';
+<<<<<<< HEAD
 import { ContactComponent } from './component/contact/contact.component';
 
 
@@ -35,6 +36,9 @@ const config = {
 };
 
 
+=======
+import { ServiceTabComponent } from './Component/service-tab/service-tab.component';
+>>>>>>> 1e39072a205d69c87e29235fe94df2f5c43c4244
 
 @NgModule({
   declarations: [
@@ -47,7 +51,11 @@ const config = {
     HomepageComponent,
     FooterComponent,
     EventsComponent,
+<<<<<<< HEAD
     ContactComponent
+=======
+    ServiceTabComponent
+>>>>>>> 1e39072a205d69c87e29235fe94df2f5c43c4244
   ],
   imports: [
     BrowserModule,
