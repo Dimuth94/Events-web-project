@@ -40,7 +40,7 @@ export class SignUpComponent implements OnInit {
   (error) => this.errorMessage = error);
 
    // console.log(x);
-   
+   1
     console.log(this.errorMessage);
     
   }
