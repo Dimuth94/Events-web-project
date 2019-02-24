@@ -21,6 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { EventsComponent } from './component/events/events.component';
+import { ServiceTabComponent } from './Component/service-tab/service-tab.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EventsComponent } from './component/events/events.component';
     NavbarComponent,
     HomepageComponent,
     FooterComponent,
-    EventsComponent
+    EventsComponent,
+    ServiceTabComponent
   ],
   imports: [
     BrowserModule,
